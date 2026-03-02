@@ -10,13 +10,26 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+
+/*some custom theme colors for the left side */
+  --color-first: #c3ebfa;
+  --color-second: #edf9fd;
+  --color-third: #cfceff;
+  --color-fourth: #F1F0FF;
+  --color-fifth: #fae27c;
+  --color-sixth: #fefce8;
+  
+
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-  }
+  } 
 }
 
 body {
