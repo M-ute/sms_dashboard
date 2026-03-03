@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image';
 import { RadialBarChart, RadialBar, Tooltip, ResponsiveContainer } from 'recharts';
-//import { RechartsDevtools } from '@recharts/devtools';
 
 
 
@@ -34,9 +33,9 @@ const data = [
 // };
 
 
-const CountCharts = () => {
+const CountChart = () => {
   return (
-    <div className='bg-white rounded-xl w-full h-full p-4'>
+    <div className='bg-white rounded-xl w-full h-full p-4 shadow-md'>
         {/*TITLE*/}
         <div className='flex justify-between items-center '>
             <h1 className='text-lg font-semibold'>Students</h1>
@@ -44,7 +43,7 @@ const CountCharts = () => {
         </div>
 
 
-        {/*CHARTS*/}
+        {/*CHART*/}
         <div className="relative w-full h-3/4 flex items-center justify-center">
             <div className="w-full h-full flex items-center justify-center">
                 <ResponsiveContainer width="100%" height="100%">
@@ -54,11 +53,11 @@ const CountCharts = () => {
                     data={data}
                     >
                     <RadialBar  background dataKey="count" />
-                    <Tooltip />
+                    <Tooltip contentStyle={{borderRadius:"10px"}} />
                     </RadialBarChart>
                 </ResponsiveContainer>
 
-                <Image src="/maleFemale.png" alt='' width={50} height={50} className='absolute' />
+                <Image src="/maleFemale.png" alt='' width={42} height={42} className='absolute top-1/2 left-1/2 -translate-1/2 -translate-1/2' />
             </div>
         </div>
 
@@ -80,4 +79,4 @@ const CountCharts = () => {
   )
 }
 
-export default CountCharts
+export default CountChart

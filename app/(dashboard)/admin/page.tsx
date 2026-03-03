@@ -1,6 +1,9 @@
 import UserCards from "@/components/UserCards"
-import CountCharts from "@/components/CountCharts"
+import CountChart from "@/components/CountChart"
+import AttendanceChart from "@/components/AttendanceChart"
+import FinanceChart from "@/components/FinanceChart"
 //import { type } from '../../../.next/types/routes.d';
+import Calender from '../../../components/Calender';
 
 const AdminPage = () => {
   return (
@@ -19,24 +22,25 @@ const AdminPage = () => {
         <div className="flex flex-col lg:flex-row gap-4">
           {/*COUNT CHART*/}
           <div className="w-full lg:w-1/3 h-112.5">
-            <CountCharts/>
+            <CountChart/>
           </div>
 
           {/*ATTENDANCE CHART*/}
           <div className="w-full lg:w-2/3 h-112.5">
-          
+            <AttendanceChart/>
           </div>
         </div>
 
         {/*BOTTOM CHARTS*/}
-        <div className="">
-
+        <div className="w-full h-125 ">
+          <FinanceChart/>
+          
         </div>
       </div>
 
       {/*RIGHT*/}
-      <div className="w-full lg:w-1/3 text-black"> 
-        right
+      <div className="w-full lg:w-1/3 text-black flex-col gap-8 "> 
+        <Calender/>
       </div>
 
     </div>
