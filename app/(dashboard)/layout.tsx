@@ -14,7 +14,7 @@ export default function DashboardLayout({
        <div className="w-[15%] md:w-[10%] lg:w-[15%] xl:w-[15%] bg-gray-200 p-4" >
         <Link href="/" className="flex items-center justify-center lg:justify-start gap-2">
           <Image src="/logo.png" alt="logo" width={32} height={32} />
-          <span className="hidden lg:block text-black"> Victory College</span>
+          <span className="hidden lg:block text-black font-extrabold"> Victory College</span>
         </Link>
 
         <Menu/>

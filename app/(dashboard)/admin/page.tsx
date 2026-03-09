@@ -4,6 +4,7 @@ import AttendanceChart from "@/components/AttendanceChart"
 import FinanceChart from "@/components/FinanceChart"
 //import { type } from '../../../.next/types/routes.d';
 import Calender from '../../../components/Calender';
+import Announcements from "@/components/Announcements";
 
 const AdminPage = () => {
   return (
@@ -38,9 +39,11 @@ const AdminPage = () => {
         </div>
       </div>
 
-      {/*RIGHT*/}
+      {/*RIGHT contains calender, events and announcements */}
       <div className="w-full lg:w-1/3 text-black flex-col gap-8 "> 
         <Calender/>
+        
+        <Announcements/>
       </div>
 
     </div>
